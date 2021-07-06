@@ -1,0 +1,174 @@
+What do you mean by *args and **kwargs?
+---->*args and **kwargs are special keyword which allows function to take variable length argument.
+*args passes variable number of non-keyworded arguments list and on which operation of the list can be performed.
+**kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.
+*args and **kwargs make the function flexible.
+
+
+What is the iterator protocol?
+Iterator in Python is simply an object that can be iterated upon. An object which will return data, one element at a time.
+e use the next() function to manually iterate through all the items of an iterator. When we reach the end and there is no more data to be returned, it will raise the StopIteration Exception. Following is an example.
+
+Technically speaking, a Python iterator object must implement two special methods, __iter__() and __next__(), collectively called the iterator protocol.
+What is tuple unpacking?
+
+
+Explain garbage collection with Python.
+There are two aspects to memory management and garbage collection in CPython:
+
+Reference counting
+Generational garbage collection
+
+ how to deallocate memory in python?
+
+
+What is JSON? Describe in brief how you’d convert JSON data into Python data?
+JavaScript Object Notation.You can parse a JSON string using json.loads() method. The method returns a dictionary.
+import json
+
+person = '{"name": "Bob", "languages": ["English", "Fench"]}'
+person_dict = json.loads(person)
+
+# Output: {'name': 'Bob', 'languages': ['English', 'Fench']}
+print( person_dict)
+
+# Output: ['English', 'French']
+print(person_dict['languages'])
+
+
+
+How would you display a file’s contents in reversed order?
+Problem Solution
+1. Take the file name from the user.
+2. Read each line from the file using for loop and store it in a list.
+3. Print the elements of list in reverse order.
+4. Exit.
+filename=input("Enter file name: ")
+for line in reversed(list(open(filename))):
+    print(line.rstrip())
+
+
+Can you explain the filter(), map(), and reduce() functions?
+
+What is pickling and unpickling?
+The pickle module is used for implementing binary protocols for serializing and de-serializing a Python object structure. 
+Pickling: It is a process where a Python object hierarchy is converted into a byte stream. 
+Unpickling: It is the inverse of Pickling process where a byte stream is converted into an object hierarchy. 
+dumps() – This function is called to serialize an object hierarchy.
+loads() – This function is called to de-serialize a data stream.
+
+What is the MRO in Python?
+Method Resolution Order(MRO) it denotes the way a programming language resolves a method or attribute. Python supports classes inheriting from other classes. The class being inherited is called the Parent or Superclass, while the class that inherits is called the Child or Subclass. In python, method resolution order defines the order in which the base classes are searched when executing a method. First, the method or attribute is searched within a class and then it follows the order we specified while inheriting. This order is also called Linearization of a class and set of rules are called MRO(Method Resolution Order). While inheriting from another class, the interpreter needs a way to resolve the methods that are being called via an instance. Thus we need the method resolution order. For Example
+class A:
+    def rk(self):
+        print(" In class A")
+class B(A):
+    def rk(self):
+        print(" In class B")  
+r = B()
+r.rk()
+Output:
+In class B
+
+
+Explain join() and split() in Python.
+split() method in Python split a string into a list of strings after breaking the given string by the specified separator.
+  list_string = string.split(' ')
+['Geeks', 'for', 'Geeks']
+ string = '-'.join(list_string)
+Geeks-for-Geeks
+
+
+ What is the enumerate() function in Python?
+
+Where will you use while rather than for?
+
+Differentiate between deep and shallow copy.
+
+Explain inheritance in Python.
+
+Explain lambda expressions. When would you use one?
+what is an iterator?
+
+What is a decorator?
+
+What is the pass statement in Python?
+What does the function zip() do?
+
+What is PEP 8?
+
+What makes Python object-oriented?
+.What is OOPS?
+
+What is class?
+What is Object?
+
+What is encapsulation,abstration, inheritance, polymorphism, w.r.t. python?
+
+How to find duplicate value in list.
+How can you merge two dict.
+List comprehension dict comprehension, frozenset. 
+
+
+How you can use multithreading in python.
+Difference between list and tuple
+How you can create dict from two lists?
+
+if we have very long string of names separated by comma how you can
+convert it into list.
+
+ write a code for palindrome without using inbuilt?
+
+what is generators?
+write a generator to print prime number?
+
+what is property decorator?
+ what is getter and setter method?
+what is class variable and instance variable?
+ what is data type of d.items ?
+
+why we use set?
+The Python sets are highly useful to efficiently remove duplicate values from a collection like a list and to perform common math operations like unions and intersections.
+difference between list and array?
+List	Array
+Can consist of elements belonging to different data types	Only consists of elements belonging to the same data type
+
+what is python path?
+PYTHONPATH is an environment variable which the user can set to add additional directories that the user wants Python to add to the sys.path directory list. In short, we can say that it is an environment variable that you set before running the Python interpreter. 
+how memory managed in python?
+
+what is module and library?
+
+what is multithreading and multiprocessing?
+
+What is JSON. Describe in brief how you’d convert JSON data into Python data
+Diff. between the append() and extend() methods of a list.
+
+ how can you remove the whitespaces from the string “aaa bbb ccc ddd eee”
+s='aaa bbb ccc ddd eee'
+s1=''.join(s.split())
+s1
+s='aaa bbb ccc ddd eee'
+s1=''.join(s.split())
+s1
+
+What happens if we do not handle an error in the except block.
+
+what is multiple inheritance
+
+what is method overriding n overloading
+
+a variable containg string how will we replace any character
+
+how does python interprete code
+
+ write a code for printing second max value in list without for loop
+
+difference between generator and iterator? which one is fast
+
+difference between module and package.
+what is init in class
+how to write destructor in class
+
+ dictionary printing random keys how to sequence the key .
+What is Abstract base class ?
